@@ -139,6 +139,10 @@ strong {
     margin: 0 auto 60px;
 }
 
+.section-head .btn {
+    margin-top: 6px;
+}
+
 .section-lead {
     font-size: 1.05rem;
     color: var(--muted);
@@ -455,6 +459,7 @@ strong {
 .hero-badges li {
     font-family: var(--font-serif);
     font-size: 1.05rem;
+    font-weight: 300;
     color: var(--heading);
 }
 
@@ -462,7 +467,7 @@ strong {
     display: block;
     font-family: var(--font-sans);
     font-size: .64rem;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: .24em;
     text-transform: uppercase;
     color: var(--muted);
@@ -892,13 +897,9 @@ strong {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
     padding-bottom: 50px;
-}
-
-.footer-brand img {
-    max-width: 240px;
 }
 
 .footer-col {
@@ -943,6 +944,15 @@ strong {
     border-top: 1px solid var(--line);
     font-size: .78rem;
     color: var(--muted);
+}
+
+.footer-bottom a {
+    color: var(--heading);
+    font-weight: 500;
+}
+
+.footer-bottom a:hover {
+    color: var(--mint-deep);
 }
 
 /* ==========================================================================
@@ -1102,18 +1112,15 @@ strong {
         justify-content: flex-start;
     }
 
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer-brand {
-        grid-column: 1 / -1;
-    }
 }
 
 @media (max-width: 600px) {
     .container {
         padding: 0 16px;
+    }
+
+    .footer-grid {
+        padding-bottom: 40px;
     }
 
     .cards,
